@@ -1,0 +1,191 @@
+# Análise de Marketing – Customer Personality Dataset
+> Este repositório contém estudos em SQL.  
+> O projeto principal está na pasta `customer_personality_analysis`, onde é realizada uma análise completa de marketing com foco em dados de clientes e campanhas.
+
+## Contexto de Negócio
+
+Este projeto tem como objetivo analisar o comportamento de clientes e a performance de campanhas de marketing utilizando um dataset público do Kaggle.
+
+A análise busca apoiar decisões estratégicas como:
+
+- Otimização de campanhas
+- Identificação de clientes de alto valor
+- Priorização de canais
+- Segmentação de público
+
+---
+
+## Dataset Utilizado
+
+- **Fonte:** [Kaggle – Customer Personality Analysis](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)
+- **Total de registros:** 2.240 clientes
+- **Período:** Dataset estático (sem atualização em tempo real)
+- **Colunas principais:** dados demográficos, comportamento de compra e interação com campanhas
+
+---
+
+## Qualidade dos Dados
+
+Com base na análise exploratória realizada em SQL:
+
+| Verificação | Resultado |
+|---|---|
+| Valores nulos em Income | 24 registros (1,07%) |
+| IDs duplicados | Nenhum — cada cliente é único |
+| Linhas duplicadas | Nenhuma |
+| Tipagem incorreta | `Year_Birth` aparece como decimal em alguns ambientes |
+| Categorias inconsistentes | `Marital_Status` contém valores como `Absurd` e `YOLO` |
+
+> **Impacto:** Os dados possuem boa qualidade geral. A baixa taxa de nulos em renda (1,07%) permite análises financeiras confiáveis. Os valores inconsistentes de estado civil devem ser tratados antes de segmentações mais detalhadas.
+
+---
+
+## Métricas e KPIs
+
+### Métricas Básicas
+
+| Métrica | Valor |
+|---|---|
+| Total de clientes | 2.240 |
+| Total gasto (todas categorias) | R$ 1.356.988 |
+| Total de compras (todos canais) | 28.083 transações |
+| Compras via Web | 9.150 (32,6%) |
+| Compras em Loja | 12.970 (46,2%) |
+| Compras via Catálogo | 5.963 (21,2%) |
+
+### Indicadores
+
+| Indicador | Valor |
+|---|---|
+| Média de gasto por cliente | R$ 606 |
+| Média de compras via Web por cliente | 4,08 |
+| Média de compras em Loja por cliente | 5,79 |
+| Média de compras via Catálogo por cliente | 2,66 |
+| Recência média | 49 dias |
+
+### KPIs de Marketing
+
+**1. Taxa de resposta às campanhas**
+> Mede a efetividade de cada campanha. Ajuda a identificar quais formatos ou públicos geram mais engajamento e onde há desperdício de verba.
+
+| Campanha | Respostas | Taxa |
+|---|---|---|
+| Campanha 1 | 144 | 6,43% |
+| Campanha 2 | 30 | 1,34% |
+| Campanha 3 | 163 | 7,28% |
+| Campanha 4 | 167 | 7,46% |
+| Campanha 5 | 163 | 7,28% |
+
+**2. Clientes ativos vs inativos**
+> Baseado em recência (≤90 dias = ativo). Permite avaliar engajamento da base e planejar ações de reativação.
+
+| Status | Clientes | % |
+|---|---|---|
+| Ativos (≤90 dias) | 2.042 | 91,2% |
+| Inativos (>90 dias) | 198 | 8,8% |
+
+**3. Perfil de clientes de alto valor**
+> Análise dos top 10 clientes por gasto total. Permite criar estratégias de retenção e personalização para quem mais gera receita.
+
+**4. Canal mais eficiente**
+> Comparação entre Web, Loja e Catálogo. Orienta decisões de alocação de budget e esforços de marketing.
+
+**5. Segmentos com maior gasto médio**
+> Comparação de gasto médio por categoria de produto. Identifica os produtos prioritários e oportunidades de upsell.
+
+---
+
+## Análises Realizadas
+
+### Segmentação de Clientes
+
+| Segmento | Grupo Dominante |
+|---|---|
+| Idade | Acima de 60 anos — 744 clientes (33,2%) |
+| Renda | Faixa de 40k a 60k — 643 clientes (28,9%) |
+| Estado civil | Married — 864 clientes (38,6%) |
+| Escolaridade | Graduation — 1.127 clientes (50,3%) |
+
+### Comportamento de Compra
+
+- **Top 10 clientes que mais compram:** identificados por soma de todos os canais
+- **Top 10 clientes que mais gastam:** gasto entre R$ 2.302 e R$ 2.525
+- **Clientes que mais respondem campanhas:** identificados por soma das 5 campanhas
+
+### Performance de Campanhas
+
+- **Total de clientes que responderam ao menos 1 campanha:** 667 (29,8% da base)
+- **Campanha mais eficiente:** Campanha 4 (7,46%)
+- **Campanha menos eficiente:** Campanha 2 (1,34%) — 5,5x menos que a melhor campanha
+
+---
+
+## Insights para o Time de Marketing
+
+### 1. Campanha 2 é significativamente ineficiente
+A Campanha 2 teve taxa de resposta de apenas **1,34%** — enquanto as demais ficaram entre 6% e 7,5%. Isso representa **5,5x menos engajamento** que a campanha de melhor performance (Campanha 4).
+
+> **Decisão:** Usar a Campanha 4 como benchmark. Investigar o que diferenciou a Campanha 2 em termos de canal, mensagem ou segmentação antes de investir em novas rodadas.
+
+---
+
+### 2. Loja física é o canal dominante
+Com **46,2% das compras** (12.970 transações), a loja supera web (32,6%) e catálogo (21,2%) com folga.
+
+> **Decisão:** Fortalecer ações no ponto físico. Investigar barreiras no canal web — com 4,08 compras médias por cliente, há potencial de crescimento digital ainda pouco explorado.
+
+---
+
+### 3. Vinhos são o principal driver de receita
+O gasto médio por cliente em vinhos é de **R$ 303,94** — representando **50% de todo o gasto médio** (R$ 606 por cliente). A segunda categoria (carne) fica em R$ 166,95.
+
+> **Decisão:** Priorizar vinhos em campanhas promocionais. Explorar cross-sell com carne (segunda categoria) e criar bundles. As demais categorias (peixes, doces, frutas) têm ticket médio abaixo de R$ 40 — avaliar se vale investimento ou se são compras complementares.
+
+---
+
+### 4. Clientes de alto valor têm perfil consistente
+Os top 10 clientes por gasto total apresentam: 100% com renda Alta ou Média Alta, maioria com Graduation ou Master, e distribuição entre Baby Boomer, Gen X e Millennial.
+
+> **Decisão:** Criar campanhas segmentadas para esse perfil. Priorizar retenção com benefícios exclusivos e personalização. O gasto entre R$ 2.302 e R$ 2.525 nos top 10 indica comportamento uniforme — esse grupo tem potencial de fidelização.
+
+---
+
+### 5. Base majoritariamente ativa — mas inativos merecem atenção
+Com **91,2% da base ativa** (≤90 dias), o engajamento geral é saudável. Porém, **198 clientes inativos** representam receita potencial não capturada.
+
+> **Decisão:** Criar fluxo de reativação para os 198 inativos com ofertas personalizadas baseadas no histórico de compra. Cruzar com taxa de resposta a campanhas para verificar se esse grupo já demonstrou baixo engajamento anteriormente.
+
+---
+
+### 6. Perfil demográfico concentrado e maduro
+A base é dominada por clientes **acima de 60 anos (33,2%), casados (38,6%) e com nível superior (50,3%)**, com renda concentrada entre 40k e 60k.
+
+> **Decisão:** Comunicação menos focada em digital puro. Esse perfil tende a responder melhor a canais diretos — o que explica a dominância da loja física. Campanhas com linguagem clara e proposta de valor objetiva tendem a performar melhor.
+
+---
+
+## Limitações do Dataset
+
+- Ausência de dados temporais detalhados por compra (impossibilita análise de sazonalidade)
+- Dataset estático — não representa comportamento em tempo real
+- Falta de dados sobre canal de aquisição dos clientes
+- Categorias inconsistentes em `Marital_Status` (`Absurd`, `YOLO`) indicam necessidade de limpeza
+- Ausência de dados sobre valor por canal (apenas volume de compras)
+
+---
+
+## Próximos Passos
+
+- Tratamento dos valores inconsistentes em `Marital_Status` antes de análises de segmentação
+- Criar modelo de customer scoring com base em recência, frequência e gasto (RFM)
+- Implementar dashboard no Looker Studio ou Power BI
+- Investigar os diferenciais da Campanha 4 para replicar em futuras campanhas
+- Evoluir para análises preditivas de churn e LTV
+
+---
+
+## Ferramentas Utilizadas
+
+- **SQL** (PostgreSQL) — todas as análises
+- **DBeaver** — ambiente de desenvolvimento
+- **Dataset:** Kaggle – Customer Personality Analysis
