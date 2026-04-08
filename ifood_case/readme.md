@@ -21,7 +21,7 @@ A análise busca responder:
 
 ## Dataset Utilizado
 
-- **Fonte:** [Kaggle — iFood Data Business Analyst Test](https://github.com/nailson/ifood-data-business-analyst-test)
+- **Fonte:** https://www.kaggle.com/datasets/jackdaoud/marketing-data/data
 - **Total de registros:** 2.205 clientes
 - **Ferramenta de análise:** Snowflake
 - **Período:** Dataset estático (sem atualização em tempo real)
