@@ -38,7 +38,7 @@ A análise busca responder:
 | Consistência MntTotal vs soma das categorias | Consistente (validado com ROUND) |
 | Valores extremos de renda e idade | Dentro de intervalos plausíveis |
 
-**Conclusão:** Base com boa qualidade — apta para análise sem necessidade de tratamento.
+**Conclusão:** Base com boa qualidade, apta para análise sem necessidade de tratamento.
 
 ---
 
@@ -51,7 +51,7 @@ A análise busca responder:
 | Desvio padrão | R$ 575,94 |
 | IC 95% | R$ 538 a R$ 587 |
 
-A média acima da mediana indica distribuição assimétrica — poucos clientes de alto gasto puxam a média para cima. A mediana representa melhor o cliente típico.
+A média acima da mediana indica distribuição assimétrica, poucos clientes de alto gasto puxam a média para cima. A mediana representa melhor o cliente típico.
 
 ---
 
@@ -82,7 +82,7 @@ A média acima da mediana indica distribuição assimétrica — poucos clientes
 
 ### Campanhas
 - Clientes que respondem campanhas gastam **85% a mais** (R$924 vs R$498)
-- A mediana confirma a diferença — não é distorção por outliers
+- A mediana confirma a diferença, não é distorção por outliers
 - Campanha 5 tem maior retorno médio (R$1.538)
 
 ### Perfil
@@ -91,7 +91,7 @@ A média acima da mediana indica distribuição assimétrica — poucos clientes
 - Idade não apresenta tendência clara
 
 ### Comportamento
-- Recência **não impacta** o gasto — os três grupos gastam valores similares (~R$560)
+- Recência **não impacta** o gasto, os três grupos gastam valores similares (~R$560)
 - Frequência de compra tem relação positiva com o gasto
 
 ### Produtos
@@ -105,7 +105,7 @@ A média acima da mediana indica distribuição assimétrica — poucos clientes
 **H0:** Campanhas não impactam o comportamento de compra  
 **H1:** Campanhas impactam o comportamento de compra
 
-**Conclusão:** H0 rejeitada. A diferença de R$426 na média entre os grupos é confirmada também pela mediana — não é distorção por outliers. Campanhas impactam significativamente o comportamento de compra.
+**Conclusão:** H0 rejeitada. A diferença de R$426 na média entre os grupos é confirmada também pela mediana, não é distorção por outliers. Campanhas impactam significativamente o comportamento de compra.
 
 ---
 
@@ -127,9 +127,9 @@ Clientes antigos gastam tanto quanto recentes — outras variáveis (renda, filh
 
 ## Limitações
 
-- Não temos o custo das campanhas — impossível calcular ROI real
-- Correlação não implica causalidade — clientes que aceitam campanhas podem já ser naturalmente mais engajados
-- Dataset sem dimensão temporal — não é possível analisar sazonalidade ou evolução
+- Não temos o custo das campanhas, impossível calcular ROI real
+- Correlação não implica causalidade, clientes que aceitam campanhas podem já ser naturalmente mais engajados
+- Dataset sem dimensão temporal, não é possível analisar sazonalidade ou evolução
 
 ---
 
