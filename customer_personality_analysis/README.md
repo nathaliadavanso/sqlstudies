@@ -4,12 +4,14 @@ Este projeto analisa o comportamento de clientes e a performance de campanhas de
 
 ## Contexto de Negócio
 
-A análise busca apoiar decisões estratégicas como:
+Uma empresa de varejo precisa entender melhor quem são seus clientes, quais campanhas geram mais engajamento e onde concentrar esforços de marketing para maximizar resultado.
 
-- Otimização de campanhas
-- Identificação de clientes de alto valor
-- Priorização de canais
-- Segmentação de público
+A análise busca responder:
+
+- Quais campanhas estão funcionando e quais precisam ser revisadas?
+- Quais canais de venda têm maior potencial?
+- Qual o perfil dos clientes que mais gastam?
+- Onde o time de marketing deve concentrar esforços?
 
 ## Dataset Utilizado
 
@@ -55,9 +57,9 @@ A análise busca apoiar decisões estratégicas como:
 
 ### KPIs de Marketing
 
-**1. Taxa de resposta às campanhas**
+**1. Taxa de adesão às campanhas**
 
-| Campanha | Respostas | Taxa |
+| Campanha | Adesões | Taxa |
 |---|---|---|
 | Campanha 1 | 144 | 6,43% |
 | Campanha 2 | 30 | 1,34% |
@@ -65,18 +67,28 @@ A análise busca apoiar decisões estratégicas como:
 | Campanha 4 | 167 | 7,46% |
 | Campanha 5 | 163 | 7,28% |
 
+A Campanha 2 teve adesão de apenas 1,34% — 5,5x abaixo da Campanha 4, que liderou o ranking. Essa diferença expressiva sugere que o formato, canal ou segmentação da Campanha 2 não foram adequados ao perfil da base. Antes de investir em novas rodadas, é recomendável investigar o que diferenciou essas duas campanhas em termos de abordagem e público.
+
 **2. Clientes ativos vs inativos**
 
 | Status | Clientes | % |
 |---|---|---|
-| Ativos (≤90 dias) | 2.042 | 91,2% |
-| Inativos (>90 dias) | 198 | 8,8% |
+| Ativos (até 90 dias) | 2.042 | 91,2% |
+| Inativos (acima de 90 dias) | 198 | 8,8% |
 
-**3. Perfil de clientes de alto valor** — Análise dos top 10 clientes por gasto total.
+A base está majoritariamente ativa, o que indica bom engajamento geral. Contudo, os 198 clientes inativos representam receita potencial não capturada — considerando o gasto médio de R$ 606 por cliente, esse grupo pode representar até R$ 120 mil em receita se reativado. Uma estratégia de reativação com ofertas personalizadas baseadas no histórico de compra é recomendada.
 
-**4. Canal mais eficiente** — Comparação entre Web, Loja e Catálogo.
+**3. Perfil de clientes de alto valor**
 
-**5. Segmentos com maior gasto médio** — Comparação de gasto médio por categoria de produto.
+Os top 10 clientes por gasto total apresentam perfil consistente: 100% com renda alta ou média alta, maioria com ensino superior e distribuição entre Baby Boomer, Gen X e Millennial. Gasto entre R$ 2.302 e R$ 2.525 — comportamento uniforme que indica potencial de fidelização com benefícios exclusivos.
+
+**4. Canal mais eficiente**
+
+A loja física concentra 46,2% das compras — o dobro do canal web (32,6%). Esse resultado é coerente com o perfil demográfico da base: clientes acima de 60 anos, casados e com nível superior tendem a preferir canais diretos e presenciais. O canal web, com média de 4,08 compras por cliente, ainda tem potencial de crescimento — vale investigar barreiras de conversão digital para esse perfil.
+
+**5. Segmentos com maior gasto médio**
+
+Vinho representa 50% do gasto médio por cliente (R$ 303,94). Vinho e carne juntos concentram cerca de 78% do gasto total. As demais categorias — peixe, doce e frutas — ficam abaixo de R$ 40 de média cada.
 
 ## Análises Realizadas
 
@@ -93,48 +105,46 @@ A análise busca apoiar decisões estratégicas como:
 
 - Top 10 clientes que mais compram: identificados por soma de todos os canais
 - Top 10 clientes que mais gastam: gasto entre R$ 2.302 e R$ 2.525
-- Clientes que mais respondem campanhas: identificados por soma das 5 campanhas
+- Clientes que mais aderem a campanhas: identificados por soma das 5 campanhas
 
 ### Performance de Campanhas
 
-- Total de clientes que responderam ao menos 1 campanha: 667 (29,8% da base)
+- Total de clientes que aderiram a pelo menos 1 campanha: 667 (29,8% da base)
 - Campanha mais eficiente: Campanha 4 (7,46%)
-- Campanha menos eficiente: Campanha 2 (1,34%) — 5,5x menos que a melhor campanha
+- Campanha menos eficiente: Campanha 2 (1,34%) — 5,5x abaixo da melhor campanha
 
-## Insights para o Time de Marketing
+## Insights e Recomendações para o Time de Marketing
 
-**1. Campanha 2 é significativamente ineficiente**
-Taxa de resposta de apenas 1,34% — 5,5x menos que a Campanha 4. Usar a Campanha 4 como benchmark antes de investir em novas rodadas.
+**1. Pausar ou reformular a Campanha 2**
+Com taxa de adesão de apenas 1,34%, a Campanha 2 está muito abaixo das demais. Antes de novos investimentos, investigar o que diferenciou essa campanha das outras em formato, canal e segmentação. Usar a Campanha 4 como benchmark.
 
-**2. Loja física é o canal dominante**
-46,2% das compras. Canal web tem potencial de crescimento com 4,08 compras médias por cliente.
+**2. Fortalecer a presença na loja física e investigar barreiras no digital**
+A loja concentra 46,2% das compras — reflexo direto do perfil maduro da base. Ao mesmo tempo, o canal web tem média de 4,08 compras por cliente, o que indica espaço para crescimento. Vale testar ações digitais adaptadas ao perfil 60+, como comunicação mais clara e processos de compra simplificados.
 
-**3. Vinhos são o principal driver de receita**
-R$ 303,94 de gasto médio — 50% do total. Priorizar em campanhas e explorar cross-sell com carne.
+**3. Concentrar campanhas em vinho e carne**
+Essas duas categorias representam 78% do gasto total. Campanhas promocionais nessas categorias têm maior potencial de retorno. Explorar cross-sell entre os dois produtos.
 
-**4. Clientes de alto valor têm perfil consistente**
-100% com renda alta, maioria com ensino superior. Potencial de fidelização com campanhas segmentadas.
+**4. Criar estratégia de reativação para os 198 inativos**
+Considerando o gasto médio da base, esse grupo representa receita potencial relevante. Uma campanha segmentada com base no histórico de compra de cada cliente pode ser o caminho.
 
-**5. Base majoritariamente ativa — inativos merecem atenção**
-91,2% ativos. Os 198 inativos representam receita potencial não capturada.
-
-**6. Perfil demográfico concentrado e maduro**
-60+ anos, casados, ensino superior, renda 40k-60k. Responde melhor a canais diretos — explica dominância da loja física.
+**5. Fidelizar os clientes de alto valor**
+Os top 10 clientes têm comportamento uniforme e perfil consistente. Uma estratégia de fidelização com benefícios exclusivos pode aumentar a retenção desse grupo de maior impacto na receita.
 
 ## Limitações do Dataset
 
-- Ausência de dados temporais detalhados (impossibilita análise de sazonalidade)
+- Ausência de dados de custo por campanha — não foi possível calcular CAC (Custo de Aquisição de Cliente) nem ROI real de cada campanha
+- Ausência de dados de receita por cliente — impossibilita o cálculo de LTV (Lifetime Value)
 - Dataset estático — não representa comportamento em tempo real
-- Falta de dados sobre canal de aquisição dos clientes
-- Categorias inconsistentes em Marital_Status (Absurd, YOLO)
-- Ausência de dados sobre valor por canal (apenas volume)
+- Ausência de dados sobre canal de aquisição dos clientes
+- Categorias inconsistentes em Marital_Status (Absurd, YOLO) indicam necessidade de limpeza
+- Ausência de dados sobre valor por canal (apenas volume de compras)
 
 ## Próximos Passos
 
 - Tratar valores inconsistentes em Marital_Status antes de segmentações
-- Criar modelo de customer scoring com base em RFM
+- Criar modelo de customer scoring com base em RFM (Recência, Frequência, Valor)
 - Implementar dashboard no Looker Studio ou Power BI
-- Investigar diferenciais da Campanha 4 para replicar em futuras campanhas
+- Incluir dados de custo de campanha para viabilizar cálculo de CAC e ROI
 - Evoluir para análises preditivas de churn e LTV
 
 ## Ferramentas Utilizadas
