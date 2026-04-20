@@ -84,7 +84,7 @@ Os top 10 clientes por gasto total apresentam perfil consistente: 100% com renda
 
 **4. Canal mais eficiente**
 
-A loja física concentra 46,2% das compras, o dobro do canal web (32,6%). Esse resultado é coerente com o perfil demográfico da base: clientes acima de 60 anos, casados e com nível superior tendem a preferir canais diretos e presenciais. O canal web, com média de 4,08 compras por cliente, ainda tem potencial de crescimento — vale investigar barreiras de conversão digital para esse perfil.
+A loja física concentra 46,2% das compras, o dobro do canal web (32,6%). Esse resultado é coerente com o perfil demográfico da base: clientes acima de 60 anos, casados e com nível superior tendem a preferir canais diretos e presenciais. O canal web, com média de 4,08 compras por cliente, ainda tem potencial de crescimento, vale investigar barreiras de conversão digital para esse perfil.
 
 **5. Segmentos com maior gasto médio**
 
