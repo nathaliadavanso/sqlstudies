@@ -67,7 +67,7 @@ A análise busca responder:
 | Campanha 4 | 167 | 7,46% |
 | Campanha 5 | 163 | 7,28% |
 
-A Campanha 2 teve adesão de apenas 1,34% — 5,5x abaixo da Campanha 4, que liderou o ranking. Essa diferença expressiva sugere que o formato, canal ou segmentação da Campanha 2 não foram adequados ao perfil da base. Antes de investir em novas rodadas, é recomendável investigar o que diferenciou essas duas campanhas em termos de abordagem e público.
+A Campanha 2 teve adesão de apenas 1,34%, 5,5x abaixo da Campanha 4, que liderou o ranking. Essa diferença expressiva sugere que o formato, canal ou segmentação da Campanha 2 não foram adequados ao perfil da base. Antes de investir em novas rodadas, é recomendável investigar o que diferenciou essas duas campanhas em termos de abordagem e público.
 
 **2. Clientes ativos vs inativos**
 
@@ -76,19 +76,19 @@ A Campanha 2 teve adesão de apenas 1,34% — 5,5x abaixo da Campanha 4, que lid
 | Ativos (até 90 dias) | 2.042 | 91,2% |
 | Inativos (acima de 90 dias) | 198 | 8,8% |
 
-A base está majoritariamente ativa, o que indica bom engajamento geral. Contudo, os 198 clientes inativos representam receita potencial não capturada — considerando o gasto médio de R$ 606 por cliente, esse grupo pode representar até R$ 120 mil em receita se reativado. Uma estratégia de reativação com ofertas personalizadas baseadas no histórico de compra é recomendada.
+A base está majoritariamente ativa, o que indica bom engajamento geral. Contudo, os 198 clientes inativos representam receita potencial não capturada, considerando o gasto médio de R$ 606 por cliente, esse grupo pode representar até R$ 120 mil em receita se reativado. Uma estratégia de reativação com ofertas personalizadas baseadas no histórico de compra é recomendada.
 
 **3. Perfil de clientes de alto valor**
 
-Os top 10 clientes por gasto total apresentam perfil consistente: 100% com renda alta ou média alta, maioria com ensino superior e distribuição entre Baby Boomer, Gen X e Millennial. Gasto entre R$ 2.302 e R$ 2.525 — comportamento uniforme que indica potencial de fidelização com benefícios exclusivos.
+Os top 10 clientes por gasto total apresentam perfil consistente: 100% com renda alta ou média alta, maioria com ensino superior e distribuição entre Baby Boomer, Gen X e Millennial. Gasto entre R$ 2.302 e R$ 2.525, comportamento uniforme que indica potencial de fidelização com benefícios exclusivos.
 
 **4. Canal mais eficiente**
 
-A loja física concentra 46,2% das compras — o dobro do canal web (32,6%). Esse resultado é coerente com o perfil demográfico da base: clientes acima de 60 anos, casados e com nível superior tendem a preferir canais diretos e presenciais. O canal web, com média de 4,08 compras por cliente, ainda tem potencial de crescimento — vale investigar barreiras de conversão digital para esse perfil.
+A loja física concentra 46,2% das compras, o dobro do canal web (32,6%). Esse resultado é coerente com o perfil demográfico da base: clientes acima de 60 anos, casados e com nível superior tendem a preferir canais diretos e presenciais. O canal web, com média de 4,08 compras por cliente, ainda tem potencial de crescimento — vale investigar barreiras de conversão digital para esse perfil.
 
 **5. Segmentos com maior gasto médio**
 
-Vinho representa 50% do gasto médio por cliente (R$ 303,94). Vinho e carne juntos concentram cerca de 78% do gasto total. As demais categorias — peixe, doce e frutas — ficam abaixo de R$ 40 de média cada.
+Vinho representa 50% do gasto médio por cliente (R$ 303,94). Vinho e carne juntos concentram cerca de 78% do gasto total. As demais categorias, peixe, doce e frutas, ficam abaixo de R$ 40 de média cada.
 
 ## Análises Realizadas
 
@@ -119,7 +119,7 @@ Vinho representa 50% do gasto médio por cliente (R$ 303,94). Vinho e carne junt
 Com taxa de adesão de apenas 1,34%, a Campanha 2 está muito abaixo das demais. Antes de novos investimentos, investigar o que diferenciou essa campanha das outras em formato, canal e segmentação. Usar a Campanha 4 como benchmark.
 
 **2. Fortalecer a presença na loja física e investigar barreiras no digital**
-A loja concentra 46,2% das compras — reflexo direto do perfil maduro da base. Ao mesmo tempo, o canal web tem média de 4,08 compras por cliente, o que indica espaço para crescimento. Vale testar ações digitais adaptadas ao perfil 60+, como comunicação mais clara e processos de compra simplificados.
+A loja concentra 46,2% das compras, reflexo direto do perfil maduro da base. Ao mesmo tempo, o canal web tem média de 4,08 compras por cliente, o que indica espaço para crescimento. Vale testar ações digitais adaptadas ao perfil 60+, como comunicação mais clara e processos de compra simplificados.
 
 **3. Concentrar campanhas em vinho e carne**
 Essas duas categorias representam 78% do gasto total. Campanhas promocionais nessas categorias têm maior potencial de retorno. Explorar cross-sell entre os dois produtos.
